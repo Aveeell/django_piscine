@@ -1,0 +1,905 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>periodic_table</title>
+		</head>
+		<style>
+			table, td {
+				border-style: solid;
+				border-radius: 5px;
+				border-color: #424242;
+			}
+			#name {
+				color: red;
+			}
+		</style>
+		<body>
+			<div>
+				<table>
+					<tr>
+						<td>
+							<h4 id="name">Hydrogen</h4>
+							<ul>
+								<li>0</li>
+								<li>1</li>
+								<li id="name"> H</li>
+								<li>1.00794</li>
+								<li>1</li>
+							</ul>
+						</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td>
+							<h4 id="name">Helium</h4>
+							<ul>
+								<li>17</li>
+								<li>2</li>
+								<li id="name"> He</li>
+								<li>4.002602</li>
+								<li>2</li>
+							</ul>
+						</td></tr>
+						<td>
+							<h4 id="name">Lithium</h4>
+							<ul>
+								<li>0</li>
+								<li>3</li>
+								<li id="name"> Li</li>
+								<li>6.941</li>
+								<li>2 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Beryllium</h4>
+							<ul>
+								<li>1</li>
+								<li>4</li>
+								<li id="name"> Be</li>
+								<li>9.012182</li>
+								<li>2 2</li>
+							</ul>
+						</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td>
+							<h4 id="name">Boron</h4>
+							<ul>
+								<li>12</li>
+								<li>5</li>
+								<li id="name"> B</li>
+								<li>10.811</li>
+								<li>2 3</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Carbon</h4>
+							<ul>
+								<li>13</li>
+								<li>6</li>
+								<li id="name"> C</li>
+								<li>12.0107</li>
+								<li>2 4</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Nitrogen</h4>
+							<ul>
+								<li>14</li>
+								<li>7</li>
+								<li id="name"> N</li>
+								<li>14.0067</li>
+								<li>2 5</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Oxygen</h4>
+							<ul>
+								<li>15</li>
+								<li>8</li>
+								<li id="name"> O</li>
+								<li>15.9994</li>
+								<li>2 6</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Fluorine</h4>
+							<ul>
+								<li>16</li>
+								<li>9</li>
+								<li id="name"> F</li>
+								<li>18.998404</li>
+								<li>2 7</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Neon</h4>
+							<ul>
+								<li>17</li>
+								<li>10</li>
+								<li id="name"> Ne</li>
+								<li>20.1797</li>
+								<li>2 8</li>
+							</ul>
+						</td></tr>
+						<td>
+							<h4 id="name">Sodium</h4>
+							<ul>
+								<li>0</li>
+								<li>11</li>
+								<li id="name"> Na</li>
+								<li>22.989769</li>
+								<li>2 8 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Magnesium</h4>
+							<ul>
+								<li>1</li>
+								<li>12</li>
+								<li id="name"> Mg</li>
+								<li>24.305</li>
+								<li>2 8 2</li>
+							</ul>
+						</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td>
+							<h4 id="name">Aluminium</h4>
+							<ul>
+								<li>12</li>
+								<li>13</li>
+								<li id="name"> Al</li>
+								<li>26.981539</li>
+								<li>2 8 3</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Silicon</h4>
+							<ul>
+								<li>13</li>
+								<li>14</li>
+								<li id="name"> Si</li>
+								<li>28.0855</li>
+								<li>2 8 4</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Phosphorus</h4>
+							<ul>
+								<li>14</li>
+								<li>15</li>
+								<li id="name"> P</li>
+								<li>30.973763</li>
+								<li>2 8 5</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Sulfur</h4>
+							<ul>
+								<li>15</li>
+								<li>16</li>
+								<li id="name"> S</li>
+								<li>32.065</li>
+								<li>2 8 6</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Chlorine</h4>
+							<ul>
+								<li>16</li>
+								<li>17</li>
+								<li id="name"> Cl</li>
+								<li>35.453</li>
+								<li>2 8 7</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Argon</h4>
+							<ul>
+								<li>17</li>
+								<li>18</li>
+								<li id="name"> Ar</li>
+								<li>39.948</li>
+								<li>2 8 8</li>
+							</ul>
+						</td></tr>
+						<td>
+							<h4 id="name">Potassium</h4>
+							<ul>
+								<li>0</li>
+								<li>19</li>
+								<li id="name"> K</li>
+								<li>39.0983</li>
+								<li>2 8 8 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Calcium</h4>
+							<ul>
+								<li>1</li>
+								<li>20</li>
+								<li id="name"> Ca</li>
+								<li>40.078</li>
+								<li>2 8 8 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Scandium</h4>
+							<ul>
+								<li>2</li>
+								<li>21</li>
+								<li id="name"> Sc</li>
+								<li>44.955914</li>
+								<li>2 8 9 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Titanium</h4>
+							<ul>
+								<li>3</li>
+								<li>22</li>
+								<li id="name"> Ti</li>
+								<li>47.867</li>
+								<li>2 8 10 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Vanadium</h4>
+							<ul>
+								<li>4</li>
+								<li>23</li>
+								<li id="name"> V</li>
+								<li>50.9415</li>
+								<li>2 8 11 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Chromium</h4>
+							<ul>
+								<li>5</li>
+								<li>24</li>
+								<li id="name"> Cr</li>
+								<li>51.9961</li>
+								<li>2 8 13 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Manganese</h4>
+							<ul>
+								<li>6</li>
+								<li>25</li>
+								<li id="name"> Mn</li>
+								<li>54.938046</li>
+								<li>2 8 13 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Iron</h4>
+							<ul>
+								<li>7</li>
+								<li>26</li>
+								<li id="name"> Fe</li>
+								<li>55.845</li>
+								<li>2 8 14 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Cobalt</h4>
+							<ul>
+								<li>8</li>
+								<li>27</li>
+								<li id="name"> Co</li>
+								<li>58.933193</li>
+								<li>2 8 15 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Nickel</h4>
+							<ul>
+								<li>9</li>
+								<li>28</li>
+								<li id="name"> Ni</li>
+								<li>58.6934</li>
+								<li>2 8 16 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Copper</h4>
+							<ul>
+								<li>10</li>
+								<li>29</li>
+								<li id="name"> Cu</li>
+								<li>63.546</li>
+								<li>2 8 18 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Zinc</h4>
+							<ul>
+								<li>11</li>
+								<li>30</li>
+								<li id="name"> Zn</li>
+								<li>65.38</li>
+								<li>2 8 18 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Gallium</h4>
+							<ul>
+								<li>12</li>
+								<li>31</li>
+								<li id="name"> Ga</li>
+								<li>69.723</li>
+								<li>2 8 18 3</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Germanium</h4>
+							<ul>
+								<li>13</li>
+								<li>32</li>
+								<li id="name"> Ge</li>
+								<li>72.63</li>
+								<li>2 8 18 4</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Arsenic</h4>
+							<ul>
+								<li>14</li>
+								<li>33</li>
+								<li id="name"> As</li>
+								<li>74.9216</li>
+								<li>2 8 18 5</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Selenium</h4>
+							<ul>
+								<li>15</li>
+								<li>34</li>
+								<li id="name"> Se</li>
+								<li>78.96</li>
+								<li>2 8 18 6</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Bromine</h4>
+							<ul>
+								<li>16</li>
+								<li>35</li>
+								<li id="name"> Br</li>
+								<li>79.904</li>
+								<li>2 8 18 7</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Krypton</h4>
+							<ul>
+								<li>17</li>
+								<li>36</li>
+								<li id="name"> Kr</li>
+								<li>83.798</li>
+								<li>2 8 18 8</li>
+							</ul>
+						</td></tr>
+						<td>
+							<h4 id="name">Rubidium</h4>
+							<ul>
+								<li>0</li>
+								<li>37</li>
+								<li id="name"> Rb</li>
+								<li>85.4678</li>
+								<li>2 8 18 8 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Strontium</h4>
+							<ul>
+								<li>1</li>
+								<li>38</li>
+								<li id="name"> Sr</li>
+								<li>87.62</li>
+								<li>2 8 18 8 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Yttrium</h4>
+							<ul>
+								<li>2</li>
+								<li>39</li>
+								<li id="name"> Y</li>
+								<li>88.90585</li>
+								<li>2 8 18 9 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Zirconium</h4>
+							<ul>
+								<li>3</li>
+								<li>40</li>
+								<li id="name"> Zr</li>
+								<li>91.224</li>
+								<li>2 8 18 10 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Niobium</h4>
+							<ul>
+								<li>4</li>
+								<li>41</li>
+								<li id="name"> Nb</li>
+								<li>92.90638</li>
+								<li>2 8 18 12 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Molybdenum</h4>
+							<ul>
+								<li>5</li>
+								<li>42</li>
+								<li id="name"> Mo</li>
+								<li>95.96</li>
+								<li>2 8 18 13 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Technetium</h4>
+							<ul>
+								<li>6</li>
+								<li>43</li>
+								<li id="name"> Tc</li>
+								<li>98</li>
+								<li>2 8 18 13 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Ruthenium</h4>
+							<ul>
+								<li>7</li>
+								<li>44</li>
+								<li id="name"> Ru</li>
+								<li>101.07</li>
+								<li>2 8 18 15 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Rhodium</h4>
+							<ul>
+								<li>8</li>
+								<li>45</li>
+								<li id="name"> Rh</li>
+								<li>102.9055</li>
+								<li>2 8 18 16 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Palladium</h4>
+							<ul>
+								<li>9</li>
+								<li>46</li>
+								<li id="name"> Pd</li>
+								<li>106.42</li>
+								<li>2 8 18 18</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Silver</h4>
+							<ul>
+								<li>10</li>
+								<li>47</li>
+								<li id="name"> Ag</li>
+								<li>107.8682</li>
+								<li>2 8 18 18 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Cadmium</h4>
+							<ul>
+								<li>11</li>
+								<li>48</li>
+								<li id="name"> Cd</li>
+								<li>112.411</li>
+								<li>2 8 18 18 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Indium</h4>
+							<ul>
+								<li>12</li>
+								<li>49</li>
+								<li id="name"> In</li>
+								<li>114.818</li>
+								<li>2 8 18 18 3</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Tin</h4>
+							<ul>
+								<li>13</li>
+								<li>50</li>
+								<li id="name"> Sn</li>
+								<li>118.71</li>
+								<li>2 8 18 18 4</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Antimony</h4>
+							<ul>
+								<li>14</li>
+								<li>51</li>
+								<li id="name"> Sb</li>
+								<li>121.76</li>
+								<li>2 8 18 18 5</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Tellurium</h4>
+							<ul>
+								<li>15</li>
+								<li>52</li>
+								<li id="name"> Te</li>
+								<li>127.6</li>
+								<li>2 8 18 18 6</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Iodine</h4>
+							<ul>
+								<li>16</li>
+								<li>53</li>
+								<li id="name"> I</li>
+								<li>126.90447</li>
+								<li>2 8 18 18 7</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Xenon</h4>
+							<ul>
+								<li>17</li>
+								<li>54</li>
+								<li id="name"> Xe</li>
+								<li>131.293</li>
+								<li>2 8 18 18 8</li>
+							</ul>
+						</td></tr>
+						<td>
+							<h4 id="name">Caesium</h4>
+							<ul>
+								<li>0</li>
+								<li>55</li>
+								<li id="name"> Cs</li>
+								<li>132.90546</li>
+								<li>2 8 18 18 8 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Barium</h4>
+							<ul>
+								<li>1</li>
+								<li>56</li>
+								<li id="name"> Ba</li>
+								<li>137.327</li>
+								<li>2 8 18 18 8 2</li>
+							</ul>
+						</td><td></td>
+						<td>
+							<h4 id="name">Hafnium</h4>
+							<ul>
+								<li>3</li>
+								<li>72</li>
+								<li id="name"> Hf</li>
+								<li>178.49</li>
+								<li>2 8 18 32 10 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Tantalum</h4>
+							<ul>
+								<li>4</li>
+								<li>73</li>
+								<li id="name"> Ta</li>
+								<li>180.94788</li>
+								<li>2 8 18 32 11 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Tungsten</h4>
+							<ul>
+								<li>5</li>
+								<li>74</li>
+								<li id="name"> W</li>
+								<li>183.84</li>
+								<li>2 8 18 32 12 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Rhenium</h4>
+							<ul>
+								<li>6</li>
+								<li>75</li>
+								<li id="name"> Re</li>
+								<li>186.207</li>
+								<li>2 8 18 32 13 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Osmium</h4>
+							<ul>
+								<li>7</li>
+								<li>76</li>
+								<li id="name"> Os</li>
+								<li>190.23</li>
+								<li>2 8 18 32 14 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Iridium</h4>
+							<ul>
+								<li>8</li>
+								<li>77</li>
+								<li id="name"> Ir</li>
+								<li>192.217</li>
+								<li>2 8 18 32 15 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Platinum</h4>
+							<ul>
+								<li>9</li>
+								<li>78</li>
+								<li id="name"> Pt</li>
+								<li>195.084</li>
+								<li>2 8 18 32 17 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Gold</h4>
+							<ul>
+								<li>10</li>
+								<li>79</li>
+								<li id="name"> Au</li>
+								<li>196.96657</li>
+								<li>2 8 18 32 18 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Mercury</h4>
+							<ul>
+								<li>11</li>
+								<li>80</li>
+								<li id="name"> Hg</li>
+								<li>200.59</li>
+								<li>2 8 18 32 18 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Thallium</h4>
+							<ul>
+								<li>12</li>
+								<li>81</li>
+								<li id="name"> Tl</li>
+								<li>204.3833</li>
+								<li>2 8 18 32 18 3</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Lead</h4>
+							<ul>
+								<li>13</li>
+								<li>82</li>
+								<li id="name"> Pb</li>
+								<li>207.2</li>
+								<li>2 8 18 32 18 4</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Bismuth</h4>
+							<ul>
+								<li>14</li>
+								<li>83</li>
+								<li id="name"> Bi</li>
+								<li>208.9804</li>
+								<li>2 8 18 32 18 5</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Polonium</h4>
+							<ul>
+								<li>15</li>
+								<li>84</li>
+								<li id="name"> Po</li>
+								<li>209</li>
+								<li>2 8 18 32 18 6</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Astatine</h4>
+							<ul>
+								<li>16</li>
+								<li>85</li>
+								<li id="name"> At</li>
+								<li>210</li>
+								<li>2 8 18 32 18 7</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Radon</h4>
+							<ul>
+								<li>17</li>
+								<li>86</li>
+								<li id="name"> Rn</li>
+								<li>222</li>
+								<li>2 8 18 32 18 8</li>
+							</ul>
+						</td></tr>
+						<td>
+							<h4 id="name">Francium</h4>
+							<ul>
+								<li>0</li>
+								<li>87</li>
+								<li id="name"> Fr</li>
+								<li>223</li>
+								<li>2 8 18 32 18 8 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Radium</h4>
+							<ul>
+								<li>1</li>
+								<li>88</li>
+								<li id="name"> Ra</li>
+								<li>226</li>
+								<li>2 8 18 32 18 8 2</li>
+							</ul>
+						</td><td></td>
+						<td>
+							<h4 id="name">Rutherfordium</h4>
+							<ul>
+								<li>3</li>
+								<li>104</li>
+								<li id="name"> Rf</li>
+								<li>267</li>
+								<li>2 8 18 32 32 10 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Dubnium</h4>
+							<ul>
+								<li>4</li>
+								<li>105</li>
+								<li id="name"> Db</li>
+								<li>268</li>
+								<li>2 8 18 32 32 11 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Seaborgium</h4>
+							<ul>
+								<li>5</li>
+								<li>106</li>
+								<li id="name"> Sg</li>
+								<li>271</li>
+								<li>2 8 18 32 32 12 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Bohrium</h4>
+							<ul>
+								<li>6</li>
+								<li>107</li>
+								<li id="name"> Bh</li>
+								<li>272</li>
+								<li>2 8 18 32 32 13 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Hassium</h4>
+							<ul>
+								<li>7</li>
+								<li>108</li>
+								<li id="name"> Hs</li>
+								<li>270</li>
+								<li>2 8 18 32 32 14 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Meitnerium</h4>
+							<ul>
+								<li>8</li>
+								<li>109</li>
+								<li id="name"> Mt</li>
+								<li>276</li>
+								<li>2 8 18 32 32 15 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Darmstadtium</h4>
+							<ul>
+								<li>9</li>
+								<li>110</li>
+								<li id="name"> Ds</li>
+								<li>281</li>
+								<li>2 8 18 32 32 17 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Roentgenium</h4>
+							<ul>
+								<li>10</li>
+								<li>111</li>
+								<li id="name"> Rg</li>
+								<li>280</li>
+								<li>2 8 18 32 32 18 1</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Copernicium</h4>
+							<ul>
+								<li>11</li>
+								<li>112</li>
+								<li id="name"> Cn</li>
+								<li>285</li>
+								<li>2 8 18 32 32 18 2</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Ununtrium</h4>
+							<ul>
+								<li>12</li>
+								<li>113</li>
+								<li id="name"> Uut</li>
+								<li>284</li>
+								<li>2 8 18 32 32 18 3</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Flerovium</h4>
+							<ul>
+								<li>13</li>
+								<li>114</li>
+								<li id="name"> Fl</li>
+								<li>289</li>
+								<li>2 8 18 32 32 18 4</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Ununpentium</h4>
+							<ul>
+								<li>14</li>
+								<li>115</li>
+								<li id="name"> Uup</li>
+								<li>288</li>
+								<li>2 8 18 32 32 18 5</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Livermorium</h4>
+							<ul>
+								<li>15</li>
+								<li>116</li>
+								<li id="name"> Lv</li>
+								<li>293</li>
+								<li>2 8 18 32 32 18 6</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Ununseptium</h4>
+							<ul>
+								<li>16</li>
+								<li>117</li>
+								<li id="name"> Uus</li>
+								<li>294</li>
+								<li>2 8 18 32 32 18 7</li>
+							</ul>
+						</td>
+						<td>
+							<h4 id="name">Ununoctium</h4>
+							<ul>
+								<li>17</li>
+								<li>118</li>
+								<li id="name"> Uuo</li>
+								<li>294</li>
+								<li>2 8 18 32 32 18 8</li>
+							</ul>
+						</td>
+				</table>
+			</div>
+		</body>
+	</html>
+	
