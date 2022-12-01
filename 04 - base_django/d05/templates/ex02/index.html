@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+    <style>
+        .form {
+            border-style:solid;
+            border-radius: 15px;
+            padding-bottom: 10px;
+            width: 25%;
+        }
+        .send_button {
+            color:red;
+
+        }
+
+        .history {
+            border-style:solid;
+            border-radius: 15px;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <span>
+        <a href="/">start page</a>
+    </span>
+    <hr>
+<div class="form">
+    <h2>Form</h2>
+    <form method="POST" id="text_form">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" class="send_button">send</button>
+    </form>
+</div>
+<hr>
+<div class="history">
+    <h2>History</h2>
+    {% for line in history reversed %}
+    <p>{{ line }}</p>
+    {% endfor %}
+</div>
+    </center>
+</body>
+</html>

@@ -1,5 +1,6 @@
 import sys
 
+
 def get_key(city):
 	capital_cities = {
 		"OR": "Salem",
@@ -11,12 +12,14 @@ def get_key(city):
 		if capital_cities.get(i) == city:
 			return i
 	return None
+
+
 def get_value(city):
 	states = {
-		"Oregon" : "OR",
-		"Alabama" : "AL",
+		"Oregon": "OR",
+		"Alabama": "AL",
 		"New Jersey": "NJ",
-		"Colorado" : "CO"
+		"Colorado": "CO"
 	}
 	key = get_key(city.capitalize())
 	if key:

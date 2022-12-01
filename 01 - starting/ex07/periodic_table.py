@@ -1,5 +1,3 @@
-import sys
-
 def get_elem(text):
 	text = 'name:' + text
 	arr = text.replace(' = ', ', ').split(', ')
@@ -65,15 +63,15 @@ if __name__ == '__main__':
 		elif position > int(i['position']):
 			position = 0
 			template += '</tr>'
-		template += table.format(name = i['name'], 
+		template += table.format(name=i['name'],
 									position=i['position'],
-									number = i['number'],
-									small = i['small'],
-									molar = i['molar'],
-									electron = i['electron'])
+									number=i['number'],
+									small=i['small'],
+									molar=i['molar'],
+									electron=i['electron'])
 		position += 1
 
-	html = html.format(table = template)
+	html = html.format(table=template)
 
 	with open ('1.html', 'w') as file:
 		file.write(html)
