@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style type="text/css">
+       table {
+        border-collapse: collapse;
+       }
+
+       td, th {
+        padding: 3px;
+        border: 1px solid black;
+       }
+   </style>
+</head>
+<body>
+<center>
+    <table>
+        <tr>
+            <th>title</th>
+            <th>episode_nb</th>
+            <th>opening_crawl</th>
+            <th>director</th>
+            <th>producer</th>
+            <th>release_date</th>
+        </tr>
+        {% for i in movies %}
+        <tr>
+            <td>{{ i.title }}</td>
+            <td>{{ i.episode_nb }}</td>
+            <td>{{ i.opening_crawl }}</td>
+            <td>{{ i.director }}</td>
+            <td>{{ i.producer }}</td>
+            <td>{{ i.release_date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>
