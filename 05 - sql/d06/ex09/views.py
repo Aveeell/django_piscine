@@ -10,5 +10,5 @@ def display(request):
         if len(info) == 0:
             raise People.DoesNotExist
         return render(request, 'ex09/display.html', {"info": info})
-    except People.DoesNotExist as e:
+    except People.DoesNotExist as err:
         return HttpResponse("No data available")
