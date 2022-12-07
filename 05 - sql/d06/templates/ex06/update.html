@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <span>
+        <a href="/">start page</a>
+    </span>
+    <hr>
+<div class="form">
+    <h2>Form</h2>
+    <form method="POST" id="text_form">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" class="send_button">update</button>
+    </form>
+</div>
+<hr>
+    </center>
+</body>
+</html>

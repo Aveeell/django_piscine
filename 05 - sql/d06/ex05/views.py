@@ -21,7 +21,6 @@ def populate(request):
                 res.append('ok')
             except Exception as err:
                 res.append(err)
-                return HttpResponse(str(i) + "<br>" for i in res)
     except Exception as err:
         return HttpResponse(err)
     return HttpResponse(str(i) + "<br>" for i in res)
