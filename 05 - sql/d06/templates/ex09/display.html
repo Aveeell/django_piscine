@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+      <style type="text/css">
+       table {
+        border-collapse: collapse;
+       }
+
+       td, th {
+        padding: 3px;
+        border: 1px solid black;
+       }
+
+       code {
+           background: #d0cdcb;
+           border-radius: 10px;
+           padding: 15px;
+       }
+   </style>
+</head>
+<body>
+<center>
+{% if info %}
+    <table>
+      <tbody>
+        <tr>
+           <th>name</th>
+          <th>homeworld</th>
+          <th>climate</th>
+        </tr>
+        {% for i in info %}
+        <tr>
+          <td>{{ i.name }}</td>
+          <td>{{ i.homeworld__name }}</td>
+          <td>{{ i.homeworld__climate }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+        If no data available, please use the following command line before use:<br><br>
+    <code> python3 manage.py loaddata ex09/ex09_initial_data.json </code>
+    {% endif %}
+</center>
+  </body>
+</html>
